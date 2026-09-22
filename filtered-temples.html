@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album</title>
+  <meta name="description" content="WDD 131 - Filtered Temple Album Page featuring responsive design, dynamic JavaScript card generation, and image filtering.">
+  <meta name="author" content="Senga Sanky Sacre">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <!-- JavaScript -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="hamburger" aria-label="Toggle Menu">&#9776;</button>
+    <nav>
+      <a href="#" id="home-filter" class="active">Home</a>
+      <a href="#" id="old-filter">Old</a>
+      <a href="#" id="new-filter">New</a>
+      <a href="#" id="large-filter">Large</a>
+      <a href="#" id="small-filter">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <!-- The temple cards will be injected here dynamically by JS -->
+    <div class="grid-container" id="temple-cards"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Senga Sanky Sacre | WDD 131</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

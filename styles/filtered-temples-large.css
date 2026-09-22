@@ -1,0 +1,28 @@
+/* Media query for screens 600px and wider */
+@media screen and (min-width: 600px) {
+  /* Hide Hamburger Toggle on Desktop */
+  #hamburger {
+    display: none;
+  }
+
+  /* Horizontal Navigation Layout */
+  nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    border-top: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  /* Multi-column Grid for Temple Cards */
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}

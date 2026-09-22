@@ -1,0 +1,148 @@
+/* Color Variables & Reset */
+:root {
+  --primary-color: #1b365d;
+  --secondary-color: #e2e8f0;
+  --accent-color: #64748b;
+  --text-color: #1e293b;
+  --white: #ffffff;
+  --card-border: #cbd5e1;
+  --font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header & Hamburger Menu */
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.75rem;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile Navigation */
+nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 100;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--accent-color);
+}
+
+/* Main Content Area */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+/* Dynamic Temple Card Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  background-color: var(--white);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+figure p {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+}
+
+figure img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 4 / 2.5;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #cbd5e1; /* Placeholder while lazy-loading */
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
