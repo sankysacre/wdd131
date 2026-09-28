@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation - Apex Coffee Crafters</title>
+    <meta name="description" content="Confirmation page displaying your submission status and total review count.">
+    <meta name="author" content="Senga Sanky Sacre">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Submission Received!</h1>
+    </header>
+
+    <main class="confirmation-container">
+        <div class="card">
+            <h2>Thank You for Your Review!</h2>
+            <p>Your product review has been submitted successfully.</p>
+            <div class="counter-box">
+                <p>Total Reviews Completed on this Device:</p>
+                <span id="reviewCounter" class="counter-number">0</span>
+            </div>
+            <a href="form.html" class="submit-btn back-btn">Submit Another Review</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Apex Coffee Crafters | Senga Sanky Sacre | WDD 131</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

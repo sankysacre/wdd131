@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #2C1D11;
+    --secondary-color: #C87D55;
+    --accent-color: #9E5228;
+    --bg-color: #FDFBF7;
+    --card-bg: #FFFFFF;
+    --text-color: #1F1915;
+    --border-color: #D3C4B8;
+    --required-color: #B31B1B;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form, .card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.form-item {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label, legend {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--primary-color);
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+fieldset legend {
+    padding: 0 0.5rem;
+}
+
+.required-asterisk {
+    color: var(--required-color);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--secondary-color);
+}
+
+/* Interactive Star Rating */
+.rating-group {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-top: 0.25rem;
+}
+
+.rating-group input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.rating-group label {
+    font-size: 2.2rem;
+    color: #D3C4B8;
+    cursor: pointer;
+    margin-bottom: 0;
+    line-height: 1;
+    transition: color 0.2s ease;
+}
+
+.rating-group label:hover,
+.rating-group label:hover ~ label,
+.rating-group input[type="radio"]:checked ~ label {
+    color: var(--accent-color);
+}
+
+/* Checkbox Layout */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.25rem;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--secondary-color);
+}
+
+/* Submit Button & Links */
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Confirmation Page Card */
+.card {
+    text-align: center;
+}
+
+.card h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.counter-box {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    border: 1px dashed var(--secondary-color);
+}
+
+.counter-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-top: 0.3rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
