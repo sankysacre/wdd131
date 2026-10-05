@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Apex Coffee Craft flagship roastery location and regional weather.">
+    <title>Apex Coffee Craft | Location</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Apex Coffee Craft</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="place.html" class="active">Our Location</a>
+            <a href="form.html">Review Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Flagship Roastery - Kampala</h2>
+        <figure class="roastery-img">
+            <img src="images/location.jpg" alt="Interior view of Apex Coffee Craft roastery" loading="lazy" width="600" height="350">
+        </figure>
+
+        <div class="place-container">
+            <section class="location-info">
+                <h3>Roastery Details</h3>
+                <p><strong>Address:</strong> Plot 12 Central Avenue, Kampala, Uganda</p>
+                <p><strong>Altitude:</strong> 1,190 meters above sea level</p>
+                <p><strong>Signature Bean:</strong> Ugandan Bugisu Arabica</p>
+            </section>
+
+            <section class="weather-info">
+                <h3>Current Weather</h3>
+                <p><strong>Temperature:</strong> <span id="temp">24</span>°C</p>
+                <p><strong>Condition:</strong> Partly Cloudy</p>
+                <p><strong>Wind Speed:</strong> <span id="wind">10</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="chill">N/A</span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Apex Coffee Craft | <a href="siteplan.html">Site Plan & References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
